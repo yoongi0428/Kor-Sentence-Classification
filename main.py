@@ -29,10 +29,9 @@ def get_model(model):
     """
     Get Model instance
     """
-    assert model in ['CHAR', 'WD', 'WIDE', 'VDCNN', 'LSTM', 'MULTI_LSTM']
+    assert model in ['CHAR', 'WIDE', 'VDCNN', 'LSTM', 'MULTI_LSTM']
 
     if model == 'CHAR': return Char_CNN(config, conv_layers, fc_layers)
-    elif model == 'WD': return WD_CNN(config, conv_layers, wconv_layers, fc_layers)
     elif model == 'WIDE' : return Wide_CNN(config, wconv_layers)
     elif model == 'VDCNN': return VDCNN2(config)
     elif model == 'LSTM' : return LSTM(config, fc_layers)
@@ -65,7 +64,7 @@ if __name__ == '__main__':
     args.add_argument('--emb', type=int, default=0, help="Embedding Size")
     args.add_argument('--bi', action='store_true', default=False, help="Bidirectional if Specified")
     args.add_argument('--eumjeol', action='store_true', default=False, help="Use Eumjeol if Specified")
-    args.add_argument('--model', type=str, default='WIDE', help="CHAR / WIDE / WD / VDCNN / LSTM / MULTI_LSTM") # CHAR, VDCNN, WD, WIDE, LSTM, MULTI_LSTM
+    args.add_argument('--model', type=str, default='WIDE', help="CHAR / WIDE / VDCNN / LSTM / MULTI_LSTM")
     config = args.parse_args()
     if config.eumjeol:
         config.charsize = 2431
