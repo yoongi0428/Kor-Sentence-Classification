@@ -28,7 +28,7 @@
     * For eumjeol(Syllable), use frequent 2350
 - Training
     * Half learning rate every 3 epochs
-    * 
+    * Early Stop if no improvement has been made for 5 echs since best
 
 - Configuration
     * 'main.py'     : main run file
