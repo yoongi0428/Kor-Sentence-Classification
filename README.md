@@ -31,19 +31,19 @@
     * Early Stop if no improvement has been made for 5 echs since best
 
 - Configuration
-    * 'main.py'     : main run file
-    * '--output'    : # of Output
-    * '--epochs'    : # of training epochs
-    * '--batch'     : Batch Size
-    * '--lr'        : Learning rate
-    * '--strmaxlen' : Maximum Limit of String Length
-    * '--charSize'  : Vocab Size
-    * '--rnn_hidden': Hidden Dimension for LSTMs
-    * 'filter_num'  : # of Filter of one CNN Filter
-    * '--emb'       : Embedding Dimension
-    * '--eumjeol'   : Use Eumjeol(Syllable-level) if specified 
-    * '--bi'        : Use Bi-directional if specified
-    * '--model'     : Model Selection (CHAR, WIDE, VDCNN, LSTM, MULTI_LSTM)
+    - `main.py`     : main run file
+    - `--output`    : # of Output
+    - `--epochs`    : # of training epochs
+    - `--batch`     : Batch Size
+    * `--lr`        : Learning rate
+    * `--strmaxlen` : Maximum Limit of String Length
+    * `--charSize`  : Vocab Size
+    * `--rnn_hidden`: Hidden Dimension for LSTMs
+    * `filter_num`  : # of Filter of one CNN Filter
+    * `--emb`       : Embedding Dimension
+    * `--eumjeol`   : Use Eumjeol(Syllable-level) if specified 
+    * `--bi`        : Use Bi-directional if specified
+    * `--model`     : Model Selection (CHAR, WIDE, VDCNN, LSTM, MULTI_LSTM)
 
 ### To Run
 - Set FC,layer and RNN layers in 'main.py'
